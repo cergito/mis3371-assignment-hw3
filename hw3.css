@@ -1,0 +1,443 @@
+/*
+    Program name: hw1.css
+    Author: Cergio Manuel A Batang
+    Date Created: Feb 27, 2026
+    Date last edited: Feb 27, 2026
+    Version: 1.0
+    Description: CSS External stylesheet for the html patient form (assignment 1)
+*/
+
+/* Tag selectors */
+
+/*Body - background color, font, flex layout */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #19b5e9;
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+    font-family: "Georgia", serif;
+    color: #2c2c2c;
+}
+/* Header - banner styling */
+header {
+    width: 100%;
+    background-color: #1a6b9a;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+/* Header table should span full width */
+header table {
+    width: 100%;
+    padding: 5px 15px;
+}
+
+/* h1 - page headings */
+h1 {
+    text-align: center;
+    font-family: "Palatino Linotype", "Palatino", serif;
+    font-weight: bold;
+    color: #1a6b9a;
+    font-size: 1.8em;
+}
+
+/* h2 - clinic name in header */
+h2 {
+    text-align: center;
+    font-family: "Palatino Linotype", "Palatino", serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* th - section headers inside the form table */
+th {
+    text-align: center;
+    font-family: "Palatino Linotype", serif;
+    font-size: 1.1em;
+    background-color: #1a6b9a;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* hr - divider lines */
+hr {
+    border: none;
+    border-top: 2px solid #1a6b9a;
+    width: 95%;
+    margin: 8px auto;
+}
+
+/* form - flex-grow so it fills vertical space */
+form {
+    flex-grow: 1;
+    width: 100%;
+}
+
+/* main - center content area */
+main {
+    text-align: center;
+    font-family: "Georgia", serif;
+    font-weight: normal;
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* label - right-aligned labels */
+label {
+    text-align: right;
+    font-family: "Georgia", serif;
+    font-weight: normal;
+    color: #1a3a52;
+}
+
+/* input - left-aligned input boxes */
+input {
+    text-align: left;
+    font-family: "Georgia", serif;
+    font-weight: normal;
+    border: 1px solid #1a6b9a;
+    border-radius: 4px;
+    padding: 4px 6px;
+    background-color: #f9fdff;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* input focus state - highlight when clicked */
+input:focus {
+    outline: none;
+    border-color: #0d4a70;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(26, 107, 154, 0.4);
+}
+
+/* textarea styling */
+textarea {
+    text-align: left;
+    font-family: "Georgia", serif;
+    font-weight: normal;
+    border: 1px solid #1a6b9a;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: #f9fdff;
+    resize: vertical;
+}
+
+/* select (dropdown) styling */
+select {
+    font-family: "Georgia", serif;
+    border: 1px solid #1a6b9a;
+    border-radius: 4px;
+    padding: 4px 6px;
+    background-color: #f9fdff;
+}
+
+/* p - paragraph text */
+p {
+    font-family: "Georgia", serif;
+    font-weight: normal;
+    margin: 4px 0;
+}
+
+/* footer tag */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a3a52;
+    color: #d0e8f5;
+    min-height: 3.5rem;
+    padding: 8px 0;
+}
+
+/* footer table */
+footer table {
+    padding: 5px 15px;
+}
+
+/* Anchor / hyperlinks */
+a {
+    color: #a8d8f0;
+    text-decoration: none;
+}
+
+/* Visited hyperlinks */
+a:visited {
+    color: #c0a8f0;
+}
+
+/* Hover state for links */
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* button tag */
+button {
+    background-color: #1a6b9a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 16px;
+    font-family: "Georgia", serif;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+button:hover {
+    background-color: #0d4a70;
+}
+
+/* Class Selectors */
+
+/* .image - aligns logo image to the left */
+.image {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* .format - wrapper div for the form table */
+.format {
+    background-color: #ffffff;
+    border: 1px solid #b0d0e8;
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin: 10px auto;
+    box-shadow: 0 4px 12px rgba(26, 107, 154, 0.15);
+    width: 90%;
+    max-width: 750px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* ID selectors */
+
+/* #today - dynamic date display in header */
+#today {
+    text-align: left;
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-right: 10px;
+    color: #d0e8f5;
+}
+
+/* #tagline - clinic tagline under the name */
+#tagline {
+    text-align: center;
+    font-family: "Georgia", serif;
+    font-style: italic;
+    color: #a8d8f0;
+    font-size: 0.85em;
+    margin: 0;
+}
+
+/* #footer - footer text div */
+#footer {
+    text-align: right;
+    font-family: "Georgia", serif;
+    font-weight: normal;
+    font-size: 0.85em;
+    color: #d0e8f5;
+}
+
+/* #logo - the SVG/img logo in the header */
+#logo {
+    display: block;
+    margin-left: 5px;
+}
+
+/* #range-slider - shows current slider value */
+#range-slider {
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    color: #1a6b9a;
+    font-size: 1.1em;
+    margin-left: 8px;
+}
+
+/* #submitBtn - styled submit button */
+#submitBtn {
+    background-color: #1a6b9a;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 5px;
+    font-family: "Georgia", serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: #0d4a70;
+}
+
+/* #resetBtn - styled reset/clear button */
+#resetBtn {
+    background-color: #a04040;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-family: "Georgia", serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#resetBtn:hover {
+    background-color: #7a2c2c;
+}
+
+
+/* Name selector */
+
+/* input[name="state"] - extra styling for state select by name */
+select[name="state"] {
+    min-width: 160px;
+}
+
+/* input[name="zip"] - zip code field width */
+input[name="zip"] {
+    max-width: 120px;
+}
+
+/* input[name="mi"] - middle initial field narrow width */
+input[name="mi"] {
+    max-width: 40px;
+    text-align: center;
+}
+
+/* input[name="ssn"] - SSN field styling */
+input[name="ssn"] {
+    letter-spacing: 2px;
+}
+
+
+/* Table layout */
+
+/* .td1 - right-aligned label cells */
+.td1 {
+    text-align: right;
+    font-family: "Georgia", serif;
+    font-weight: normal;
+    vertical-align: middle;
+    padding: 6px 10px 6px 0;
+    white-space: nowrap;
+    color: #1a3a52;
+    min-width: 160px;
+    width: 30%;
+}
+
+/* General td padding for input cells */
+td {
+    padding: 5px 6px;
+    vertical-align: middle;
+    width: auto;
+}
+
+/* input[type="range'] - fix slider so thumb reaches both ends of the track */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 200px;
+    height: 6px;
+    border: none;
+    background-color: #b0d0e8;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+}
+/* slider thumb - the draggable circle, for Chrome/Safari */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #1a6b9a; 
+    cursor: pointer;
+}
+
+/* slider thumb - for Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #1a6b9a;
+    cursor: pointer;
+    border: none;
+}
+
+/* #validateBtn - green validate button */
+#validateBtn {
+    background-color: #2e7d32; 
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 5px;
+    font-family: "Georgia", serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#validateBtn:hover {
+    background-color: #1b5e20;
+}
+
+/* #alert-box - dark overlay that covers the full screen when errors exist */
+#alert-box {
+    display: none;           
+    position: fixed;         
+    z-index: 9999;           
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+/* #alert-content - the white popup box centered on screen */
+#alert-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 350px;
+    margin: auto;
+    margin-top: 200px; 
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* heading inside the alert box */
+#alert-content h4 {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Georgia", serif;
+    font-weight: normal;
+    color: #b30000; 
+}
+
+/* #close-alert - the OK button that dismisses the alert */
+#close-alert {
+    background-color: #1a6b9a;
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+    border-color: #0d4a70;
+    font-size: 14px;
+    font-weight: bold;
+    height: 36px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+    font-family: "Georgia", serif;
+}
